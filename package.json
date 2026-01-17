@@ -1,0 +1,16 @@
+{
+  "name": "besser-sehen-landshut",
+  "version": "1.0.0",
+  "description": "Besser Sehen Landshut - Website Optimierung",
+  "scripts": {
+    "optimize-images": "node optimize-images.js",
+    "dev": "npx serve public",
+    "deploy": "echo 'Deployment via GitHub Actions'"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
