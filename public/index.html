@@ -224,6 +224,10 @@
 				margin-top: 150px;
 				position: relative;
 			}
+			/* Cards gleiche Höhe */
+			.custom-cards .col-xs-12 {
+				display: flex;
+			}
 			/* Dekorative Kreise im Hintergrund */
 			.custom-cards::before {
 				content: '';
@@ -258,6 +262,9 @@
 				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 				overflow: hidden;
 				z-index: 1;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
 			}
 			/* Hover-Effekt */
 			.custom-cards .card::before {
