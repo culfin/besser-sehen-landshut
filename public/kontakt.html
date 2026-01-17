@@ -259,7 +259,7 @@
                             
                             <h3 class="text-color-primary font-weight-bolder text-capitalize mb-3">Kontaktformular</h3>
 
-							<form id="contactForm" class="contact-form-recaptcha-v3 custom-form-style-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" action="php/kontakt.php" method="POST">
+							<form id="contactForm" class="contact-form-honeypot custom-form-style-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" action="php/kontakt.php" method="POST">
 								<div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
 									<strong>Vielen Dank!</strong> Ihre Nachricht wurde erfolgreich verschickt.
 								</div>
@@ -287,6 +287,16 @@
 										<textarea placeholder="Nachricht..." maxlength="5000" data-msg-required="Bitte geben Sie eine Nachricht ein" rows="10" class="form-control" name="message" id="message" required></textarea>
 									</div>
 								</div>
+
+								<!-- Honeypot (verstecktes Feld nur für Bots) -->
+								<div class="form-group honeypot-field" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+									<label for="website">Website (bitte leer lassen)</label>
+									<input type="text" name="website" id="website" value="" autocomplete="off" tabindex="-1">
+								</div>
+
+								<!-- Zeitstempel für Spam-Schutz -->
+								<input type="hidden" name="form_timestamp" id="form_timestamp" value="">
+
 								<div class="form-row">
 									<div class="form-group col">
 										<input type="submit" value="Abschicken" class="btn btn-primary px-4 py-3 text-center text-uppercase font-weight-semibold" data-loading-text="Lädt...">
@@ -481,7 +491,42 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
-        <script id="google-recaptcha-v3" src="https://www.google.com/recaptcha/api.js?render=6Ld8xtUjAAAAAHANDm78q11HsVwwI1iFKuZ6wrg5"></script>
+
+		<!-- Anti-Spam Protection (Honeypot + Time Validation) -->
+		<script>
+			// Setze Zeitstempel wenn Seite geladen wird
+			document.addEventListener('DOMContentLoaded', function() {
+				var timestampField = document.getElementById('form_timestamp');
+				if (timestampField) {
+					timestampField.value = Date.now();
+				}
+			});
+
+			// Client-seitige Validierung vor Submit
+			var contactForm = document.getElementById('contactForm');
+			if (contactForm) {
+				contactForm.addEventListener('submit', function(e) {
+					// Honeypot Check - "website" Feld muss leer sein
+					var honeypot = document.getElementById('website');
+					if (honeypot && honeypot.value !== '') {
+						e.preventDefault();
+						console.log('Spam detected: Honeypot filled');
+						return false;
+					}
+
+					// Zeit-Validierung - mindestens 3 Sekunden müssen vergangen sein
+					var timestamp = document.getElementById('form_timestamp');
+					if (timestamp && timestamp.value) {
+						var timeSpent = Date.now() - parseInt(timestamp.value);
+						if (timeSpent < 3000) { // 3 Sekunden
+							e.preventDefault();
+							alert('Bitte nehmen Sie sich etwas Zeit zum Ausfüllen des Formulars.');
+							return false;
+						}
+					}
+				});
+			}
+		</script>
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 		<script>
