@@ -63,14 +63,7 @@
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
 
-		<!-- Google tag (gtag.js) - Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
+		
 
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -239,42 +232,38 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-6 pb-2 order-2">
                             
-                            <h3 class="text-color-primary font-weight-bolder text-capitalize mb-3">Kontaktformular</h3>
+                            
+                            <div class="alert alert-info appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
+                                <h4 class="font-weight-bold mb-3">📧 Kontaktieren Sie uns direkt</h4>
+                                <p class="mb-3">Unser Kontaktformular wird gerade überarbeitet. In der Zwischenzeit erreichen Sie uns am schnellsten über:</p>
 
-							<form id="contactForm" class="contact-form-recaptcha-v3 custom-form-style-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100" action="php/kontakt.php" method="POST">
-								<div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
-									<strong>Vielen Dank!</strong> Ihre Nachricht wurde erfolgreich verschickt.
-								</div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="p-3 bg-light border-radius">
+                                            <i class="fas fa-phone text-primary text-4"></i>
+                                            <h5 class="font-weight-bold mt-2 mb-1">Telefon</h5>
+                                            <a href="tel:+4987114228020" class="text-dark font-weight-semibold">0871 - 142 280 20</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="p-3 bg-light border-radius">
+                                            <i class="fab fa-whatsapp text-success text-4"></i>
+                                            <h5 class="font-weight-bold mt-2 mb-1">WhatsApp</h5>
+                                            <a href="https://wa.me/4917632514105" target="_blank" class="text-dark font-weight-semibold">Nachricht schicken</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <div class="p-3 bg-light border-radius">
+                                            <i class="fas fa-envelope text-primary text-4"></i>
+                                            <h5 class="font-weight-bold mt-2 mb-1">E-Mail</h5>
+                                            <a href="mailto:hallo@bessersehen.la" class="text-dark font-weight-semibold">hallo@bessersehen.la</a>
+                                        </div>
+                                    </div>
+                                </div>
 
-								<div class="contact-form-error alert alert-danger d-none mt-4" id="contactError">
-									<strong>Ooops!</strong> Beim Versuch Ihre Nachricht zu versenden ist leider ein Fehler aufgetreten.
-									<span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
-								</div>
-                                
-								<div class="form-row">
-									<div class="form-group col-lg-6">
-										<input type="text" placeholder="Name" value="" data-msg-required="Bitte geben Sie Ihren Namen ein" maxlength="100" class="form-control" name="name" id="name" required>
-									</div>
-									<div class="form-group col-lg-6">
-										<input type="email" placeholder="E-Mail-Adresse" value="" data-msg-required="Bitte geben Sie Ihre E-Mail-Adresse ein" data-msg-email="Bitte geben Sie eine gültige E-Mail-Adresse ein" maxlength="100" class="form-control" name="email" id="email" required>
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col">
-										<input placeholder="Betreff" type="text" value="" data-msg-required="Bitte geben Sie einen Betreff an" maxlength="100" class="form-control" name="betreff" id="betreff" required>
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col">
-										<textarea placeholder="Nachricht..." maxlength="5000" data-msg-required="Bitte geben Sie eine Nachricht ein" rows="10" class="form-control" name="message" id="message" required></textarea>
-									</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col">
-										<input type="submit" value="Abschicken" class="btn btn-primary px-4 py-3 text-center text-uppercase font-weight-semibold" data-loading-text="Lädt...">
-									</div>
-								</div>
-							</form>
+                                <p class="mb-0 text-2"><small>💡 <strong>Tipp:</strong> Für Terminvereinbarungen nutzen Sie gerne WhatsApp oder rufen Sie uns direkt an.</small></p>
+                            </div>
+
                             
 						</div>
 						<div class="col-lg-6 col-md-6 pb-2 order-1 order-lg-2">
@@ -458,7 +447,7 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
-        <script id="google-recaptcha-v3" src="https://www.google.com/recaptcha/api.js?render=6Ld8xtUjAAAAAHANDm78q11HsVwwI1iFKuZ6wrg5"></script>
+        
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 		<script>
