@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Besser Sehen Landshut - Kontaktlinsen-Spezialist in Niederbayern</title>
+
+		<meta name="keywords" content="Besser Sehen, Besser Sehen Landshut, Tageslinsen, Monatslinsen, Nachtlinsen, Gleitsichtlinsen, weiche Linsen, harte Linsen" />
+		<meta name="description" content="Ihr Experte für spezielle Kontaktlinsen, Myopie-Management, Nachtlinsen und visuelle Rehabilitation in Landshut. Teil des augenmedizinischen Versorgungszentrums.">
+		<meta name="author" content="Besser Sehen Landshut">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="bilder/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
+
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://culfin.github.io/besser-sehen-landshut/">
+		<meta property="og:title" content="Besser Sehen Landshut - Kontaktlinsen-Spezialist in Niederbayern">
+		<meta property="og:description" content="Ihr Experte für spezielle Kontaktlinsen, Myopie-Management, Nachtlinsen und visuelle Rehabilitation in Landshut. Teil des augenmedizinischen Versorgungszentrums.">
+		<meta property="og:image" content="https://culfin.github.io/besser-sehen-landshut/bilder/startseite-hero.jpg">
+		<meta property="og:locale" content="de_DE">
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Besser Sehen Landshut - Kontaktlinsen-Spezialist in Niederbayern">
+		<meta name="twitter:description" content="Ihr Experte für spezielle Kontaktlinsen, Myopie-Management, Nachtlinsen und visuelle Rehabilitation in Landshut. Teil des augenmedizinischen Versorgungszentrums.">
+		<meta name="twitter:image" content="https://culfin.github.io/besser-sehen-landshut/bilder/startseite-hero.jpg">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		
+		<!-- Font Optimization -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/skin-besser-sehen.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		
+
+		
+		<!-- Strukturierte Daten für Google -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "LocalBusiness",
+		  "name": "Besser Sehen Landshut",
+		  "image": "https://culfin.github.io/besser-sehen-landshut/bilder/startseite-hero.jpg",
+		  "@id": "https://bessersehen.la",
+		  "url": "https://bessersehen.la",
+		  "telephone": "+4987114228020",
+		  "priceRange": "€€",
+		  "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Veldener Str. 16",
+		    "addressLocality": "Landshut",
+		    "postalCode": "84036",
+		    "addressCountry": "DE"
+		  },
+		  "geo": {
+		    "@type": "GeoCoordinates",
+		    "latitude": 48.5239261,
+		    "longitude": 12.1449762
+		  },
+		  "openingHoursSpecification": {
+		    "@type": "OpeningHoursSpecification",
+		    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+		    "opens": "09:00",
+		    "closes": "18:00"
+		  },
+		  "sameAs": [
+		    "https://www.facebook.com/bessersehenlandshut/"
+		  ]
+		}
+		</script>
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+		
+        
+
+	</head>
+	<body>
+
+		<div class="body">
+
+			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0">
+					<div class="header-top header-top-default header-top-borders border-bottom-0 bg-color-light">
+						<div class="container h-100">
+							<div class="header-row h-100">
+								<div class="header-column justify-content-between">
+									<div class="header-row">
+										<nav class="header-nav-top w-100">
+											<ul class="nav nav-pills justify-content-end w-100 h-100 min-height-40">
+												<li class="nav-item d-none d-xl-inline-flex">
+                                                    <span class="header-top-email px-0 font-weight-normal d-flex align-items-center"><i class="fas fa-phone text-4"></i> <a class="text-color-default" href="tel:+4987114228020">0871 - 142 280 20</a></span>
+													<span class="header-top-email px-0 font-weight-normal d-flex align-items-center"><i class="far fa-envelope text-4"></i>
+                                                        <script language='JavaScript' type='text/javascript'>
+                                                            var pref = '&#109;a' + 'i&#108;' + '&#116;o';
+                                                            var attribut = 'hr' + 'ef' + '=';
+                                                            var first = '%68%61%6C%6C%6F';
+                                                            var at = '%40';
+                                                            var last = '&#x62;&#x65;&#x73;&#x73;&#x65;&#x72;&#x73;&#x65;&#x68;&#x65;&#x6E;&#x2E;&#x6C;&#x61;';
+                                                            var first2 = '&#x68;&#x61;&#x6C;&#x6C;&#x6F;';
+                                                            var at2 = '&#x40;';
+                                                            var last2 = '&#98;&#101;&#115;&#115;&#101;&#114;&#115;&#101;&#104;&#101;&#110;&#46;&#108;&#97;';
+
+                                                            document.write( '<a class="text-color-default" ' + attribut + '\'' + pref + ':' + first + at + last + '\'>' );
+                                                            document.write( first2 + at2 + last2 );
+                                                            document.write( '<\/a>' );
+                                                        </script>
+                                                        
+                                                </li>
+                                            </ul>
+
+                                            <h4 class="text-color-quaternary mb-3 font-weight-semibold text-transform-none pt-5">Öffnungszeiten</h4>
+                                            <ul class="list list-icons list-dark mt-2">
+                                                <li><i class="far fa-clock top-6"></i> Montag&ndash;Freitag: 09:00&ndash;16:00 Uhr</li>
+                                                <li><i class="far fa-clock top-6"></i> Samstag und Sonntag geschlossen</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+			<footer id="footer" class="m-0 bg-color-light">
+				<div class="container">
+					<div class="row py-5">
+						<div class="col-sm-12 pb-4 pb-lg-0 col-lg-2 mb-2 d-flex align-items-center">
+							<img src="bilder/logo-besser-sehen-landshut.svg" width="100" alt="Besser Sehen Landshut - Logo">
+						</div>
+						<div class="col-sm-6 col-lg-3 footer-column footer-column-get-in-touch">
+							<h4 class="mb-4 text-uppercase text-color-dark">Kontakt</h4>
+							<div class="info custom-info">
+								<div class="custom-info-block custom-info-block-address">
+									<span class="text-color-dark font-weight-bolder text-uppercase title-custom-info-block title-custom-info-block-address">Adresse</span>
+									<span class="font-weight-normal text-color-dark text-custom-info-block p-relative bottom-6 text-custom-info-block-address"><a href="https://goo.gl/maps/cwkrqYmi3qXbAU5H8" class="text-color-1" target="_blank">Veldener Str. 16, 84036 Landshut</a></span>
+								</div>
+								<div class="custom-info-block custom-info-block-phone">
+									<span class="text-color-dark font-weight-bolder text-uppercase title-custom-info-block title-custom-info-block-phone">Telefon</span>
+									<span class="font-weight-normal text-color-dark text-custom-info-block p-relative bottom-6 text-custom-info-block-phone"><a href="tel:+4987114228020" class="text-color-1">0871 – 142 280 20</a></span>
+								</div>
+								<div class="custom-info-block custom-info-block-email">
+									<span class="text-color-dark font-weight-bolder text-uppercase title-custom-info-block title-custom-info-block-email">E-Mail</span>
+									<span class="font-weight-normal text-color-dark text-custom-info-block p-relative bottom-6 text-custom-info-block-email">
+                                        <script language='JavaScript' type='text/javascript'>
+                                            var pref = '&#109;a' + 'i&#108;' + '&#116;o';
+                                            var attribut = 'hr' + 'ef' + '=';
+                                            var first = '%68%61%6C%6C%6F';
+                                            var at = '%40';
+                                            var last = '&#x62;&#x65;&#x73;&#x73;&#x65;&#x72;&#x73;&#x65;&#x68;&#x65;&#x6E;&#x2E;&#x6C;&#x61;';
+                                            var first2 = '&#x68;&#x61;&#x6C;&#x6C;&#x6F;';
+                                            var at2 = '&#x40;';
+                                            var last2 = '&#98;&#101;&#115;&#115;&#101;&#114;&#115;&#101;&#104;&#101;&#110;&#46;&#108;&#97;';
+
+                                            document.write( '<a class="text-color-1" ' + attribut + '\'' + pref + ':' + first + at + last + '\'>' );
+                                            document.write( first2 + at2 + last2 );
+                                            document.write( '<\/a>' );
+                                        </script>
+                                        <noscript>
+                                            <span style='display:none; '>are-</span><span style='display:inline; '>&#x68;&#x61;&#x6C;&#x6C;&#x6F;</span><span style='display:none; '>-xya34</span><span style='display:inline; '>[at]</span><span style='display:none; '>ddks-</span><span style='display:inline; '>&#98;&#101;&#115;&#115;&#101;&#114;&#115;&#101;&#104;&#101;&#110;&#46;&#108;&#97;</span>
+                                        </noscript>
+                                    </span>
+								</div>
+								<div class="custom-info-block custom-info-block-working-days">
+									<span class="text-color-dark font-weight-bolder text-uppercase title-custom-info-block title-custom-info-block-working-days">WhatsApp</span>
+									<span class="font-weight-normal text-color-1 text-custom-info-block text-custom-info-block-working-days"><a href="https://wa.me/4917632514105" target="_blank">Nachricht schicken</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 pt-5 pt-md-0 col-lg-4">
+							<div class="nav-footer-container">
+								<h4 class="mb-4 text-uppercase">Rechtliches</h4>
+								<div class="nav-footer d-flex">
+									<ul>
+										<li>
+											<a href="datenschutz.html">Datenschutz</a>
+										</li>
+										<li>
+											<a href="impressum.html">Impressum</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 pt-4 pt-lg-0 col-lg-3 text-left ml-lg-auto footer-column footer-column-opening-hours">
+							<h4 class="mb-4 text-uppercase text-color-dark">Öffnungszeiten</h4>
+							<div class="info custom-info pt-0">
+								<span>Montag-Freitag:</span>
+								<span>09:00–16:00 Uhr</span>
+							</div>
+							<div class="info custom-info pb-0 border-bottom-0 mb-4">
+								<span>Samstag und Sonntag:</span>
+								<span>Geschlossen</span>
+							</div>
+                            <ul class="social-icons">
+								<li class="social-icons-twitter">
+									<a href="https://www.facebook.com/bessersehenlandshut/" target="_blank" title="Besser Sehen Landshut auf Facebook">
+										<i class="fab fa-facebook text-6 font-weight-semibold text-hover-primary"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright pt-3 pb-3 container bg-color-light">
+					<div class="row">
+						<div class="col-lg-12 text-center m-0 pb-4">
+							<p class="text-color-default"><strong>Besser Sehen</strong> Landshut © 2020.  All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
+		<script src="vendor/popper/umd/popper.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="vendor/common/common.min.js"></script>
+		<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+		<script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+		<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="vendor/vide/jquery.vide.min.js"></script>
+		<script src="vendor/vivus/vivus.min.js"></script>
+
+        <script>
+            var slides = jQuery('.rev_slider').find('li'),
+                totalSlides = slides.length - 1,
+                randomIndex = Math.round(Math.random() * totalSlides);
+            slides.eq(randomIndex).insertBefore(slides.eq(0));
+
+            var videos = [
+				'https://bessersehen.la/videos/video-man01.mp4',
+				'https://bessersehen.la/videos/video-man02.mp4',
+				'https://bessersehen.la/videos/video-woman01.mp4',
+				'https://bessersehen.la/videos/video-woman02.mp4',
+			];
+            var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+            var initialSlide = document.getElementById('initialVideo');
+			initialSlide.setAttribute('data-videomp4', randomVideo)
+        </script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Demo -->
+		<script src="js/demos/demo-medical-2.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+	</body>
+</html>
