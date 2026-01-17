@@ -104,6 +104,24 @@
 
 		<!-- WhatsApp Floating Button -->
 		<style>
+			/* ==========================================
+			   CSS VARIABLES - Optical-Inspired Colors
+			   ========================================== */
+			:root {
+				--color-primary: #007ba7;
+				--color-primary-light: #00a3cc;
+				--color-accent: #f59e0b;
+				--color-dark: #1a1a2e;
+				--color-gray: #4a5568;
+				--color-light: #f8fafc;
+				--gradient-primary: linear-gradient(135deg, #007ba7 0%, #00a3cc 100%);
+				--gradient-accent: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+				--gradient-subtle: linear-gradient(180deg, rgba(0, 123, 167, 0.03) 0%, transparent 100%);
+			}
+
+			/* ==========================================
+			   WHATSAPP BUTTON
+			   ========================================== */
 			.whatsapp-float {
 				position: fixed;
 				width: 60px;
@@ -139,7 +157,10 @@
 					font-size: 25px;
 				}
 			}
-			/* Hero Section Dark Overlay for better text visibility */
+
+			/* ==========================================
+			   HERO SECTION - Gradient Overlay
+			   ========================================== */
 			.parallax.section-parallax::before {
 				content: '';
 				position: absolute;
@@ -147,30 +168,234 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background: rgba(0, 0, 0, 0.4);
+				background: linear-gradient(
+					135deg,
+					rgba(0, 0, 0, 0.5) 0%,
+					rgba(0, 123, 167, 0.3) 50%,
+					rgba(0, 0, 0, 0.4) 100%
+				);
 				z-index: 1;
+			}
+			/* Vignette-Effekt */
+			.parallax.section-parallax::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+				z-index: 1;
+				pointer-events: none;
 			}
 			.parallax.section-parallax .container {
 				position: relative;
 				z-index: 2;
 			}
-			/* Cards below hero section */
-			.custom-cards {
-				margin-top: 150px;
-			}
-			/* Rajdhani font for main brand heading */
+
+			/* ==========================================
+			   TYPOGRAPHY - Enhanced
+			   ========================================== */
 			.parallax h1 {
 				font-family: 'Rajdhani', sans-serif;
 				font-weight: 700;
-				letter-spacing: 0.05em;
+				letter-spacing: 0.08em;
+				font-size: clamp(2.5rem, 8vw, 4.5rem);
+				line-height: 1.1;
+				margin-bottom: 1.5rem;
 			}
-			/* CTA Button ohne helle Unterlinie */
+			.parallax p {
+				font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+				line-height: 1.6;
+				font-weight: 300;
+				letter-spacing: 0.02em;
+				max-width: 600px;
+				margin: 0 auto 2rem;
+			}
+
+			/* ==========================================
+			   CTA BUTTON - Premium Design
+			   ========================================== */
 			.parallax .btn-primary {
-				border-bottom: none !important;
-				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+				background: var(--gradient-primary);
+				border: none !important;
+				padding: 16px 40px;
+				font-family: 'Rajdhani', sans-serif;
+				font-weight: 600;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				font-size: 1rem;
+				border-radius: 50px;
+				position: relative;
+				overflow: hidden;
+				transition: all 0.3s ease;
+				box-shadow: 0 4px 15px rgba(0, 123, 167, 0.2);
+			}
+			/* Glanz-Effekt */
+			.parallax .btn-primary::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+				transition: left 0.5s ease;
+			}
+			.parallax .btn-primary:hover::before {
+				left: 100%;
 			}
 			.parallax .btn-primary:hover {
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+				transform: translateY(-2px);
+				box-shadow: 0 8px 24px rgba(0, 123, 167, 0.3);
+			}
+
+			/* ==========================================
+			   SERVICE CARDS - Komplett überarbeitet
+			   ========================================== */
+			.custom-cards {
+				margin-top: 150px;
+				position: relative;
+			}
+			/* Dekorative Kreise im Hintergrund */
+			.custom-cards::before {
+				content: '';
+				position: absolute;
+				top: -100px;
+				right: -100px;
+				width: 400px;
+				height: 400px;
+				background: radial-gradient(circle, rgba(0, 123, 167, 0.05) 0%, transparent 70%);
+				border-radius: 50%;
+				pointer-events: none;
+				z-index: 0;
+			}
+			.custom-cards::after {
+				content: '';
+				position: absolute;
+				bottom: -150px;
+				left: -150px;
+				width: 500px;
+				height: 500px;
+				background: radial-gradient(circle, rgba(245, 158, 11, 0.04) 0%, transparent 70%);
+				border-radius: 50%;
+				pointer-events: none;
+				z-index: 0;
+			}
+			.custom-cards .card {
+				position: relative;
+				padding: 40px 30px;
+				background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+				border-radius: 24px !important;
+				border: 1px solid rgba(0, 0, 0, 0.05) !important;
+				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+				overflow: hidden;
+				z-index: 1;
+			}
+			/* Kreisförmiger Gradient-Akzent (Linsen-Effekt) */
+			.custom-cards .card::before {
+				content: '';
+				position: absolute;
+				top: -50%;
+				right: -50%;
+				width: 200%;
+				height: 200%;
+				background: radial-gradient(circle, rgba(0, 123, 167, 0.08) 0%, transparent 70%);
+				opacity: 0;
+				transition: opacity 0.6s ease;
+			}
+			.custom-cards .card:hover::before {
+				opacity: 1;
+			}
+			.custom-cards .card:hover {
+				transform: translateY(-8px);
+				box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12) !important;
+				border-color: rgba(0, 123, 167, 0.2) !important;
+			}
+			/* Icon Container mit kreisförmigem Hintergrund */
+			.custom-cards .card img {
+				width: 80px !important;
+				height: 80px;
+				padding: 20px;
+				margin: 0 auto 24px;
+				background: var(--gradient-primary);
+				border-radius: 50%;
+				display: block;
+				position: relative;
+				transition: transform 0.4s ease;
+				filter: brightness(0) invert(1);
+			}
+			.custom-cards .card:hover img {
+				transform: scale(1.1);
+			}
+			/* Animierter Ring um Icon */
+			.custom-cards .card a:first-of-type {
+				position: relative;
+				display: block;
+			}
+			.custom-cards .card a:first-of-type::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) scale(0.8);
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				border: 2px solid rgba(0, 123, 167, 0.3);
+				opacity: 0;
+				transition: all 0.4s ease;
+			}
+			.custom-cards .card:hover a:first-of-type::after {
+				opacity: 1;
+				transform: translate(-50%, -50%) scale(1);
+			}
+			/* Card Titles */
+			.custom-cards .card-title {
+				font-family: 'Rajdhani', sans-serif;
+				font-weight: 600;
+				font-size: 1.25rem;
+				letter-spacing: 0.05em;
+				line-height: 1.3;
+				color: var(--color-dark);
+				margin-bottom: 1rem;
+			}
+			.custom-cards .card-text {
+				color: var(--color-gray);
+				line-height: 1.6;
+			}
+
+			/* ==========================================
+			   MICRO-INTERACTIONS - Staggered Animation
+			   ========================================== */
+			@keyframes fadeInUp {
+				from {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			.custom-cards .col-xs-12:nth-child(1) .card {
+				animation: fadeInUp 0.6s ease-out 0.1s both;
+			}
+			.custom-cards .col-xs-12:nth-child(2) .card {
+				animation: fadeInUp 0.6s ease-out 0.2s both;
+			}
+			.custom-cards .col-xs-12:nth-child(3) .card {
+				animation: fadeInUp 0.6s ease-out 0.3s both;
+			}
+			.custom-cards .col-xs-12:nth-child(4) .card {
+				animation: fadeInUp 0.6s ease-out 0.4s both;
+			}
+
+			/* ==========================================
+			   RESPONSIVE ADJUSTMENTS
+			   ========================================== */
+			@media screen and (max-width: 768px) {
+				.custom-cards::before,
+				.custom-cards::after {
+					display: none;
+				}
 			}
 		</style>
 
