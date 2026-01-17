@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swiper Test - Besser Sehen Landshut</title>
+
+    <!-- Bootstrap (für Konsistenz) -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+
+    <style>
+        /* Hero Slider Container */
+        .hero-slider {
+            width: 100%;
+            height: 600px;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .hero-slider {
+                height: 400px;
+            }
+        }
+
+        /* Slide */
+        .swiper-slide {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Caption Overlay */
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 60px 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.3) 50%, transparent);
+            color: white;
+            z-index: 10;
+        }
+
+        .slide-caption h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .slide-caption p {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .slide-caption {
+                padding: 30px 20px;
+            }
+
+            .slide-caption h2 {
+                font-size: 1.5rem;
+            }
+
+            .slide-caption p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Navigation Arrows */
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: white;
+            background: rgba(0,0,0,0.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: 20px;
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            background: rgba(0,0,0,0.8);
+        }
+
+        /* Pagination Dots */
+        .swiper-pagination-bullet {
+            background: white;
+            opacity: 0.6;
+            width: 12px;
+            height: 12px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #007bff;
+        }
+
+        /* Primary Button */
+        .btn-primary {
+            background: #007bff;
+            border-color: #007bff;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid p-0">
+    <h1 class="text-center py-4">Swiper Slider Test</h1>
+
+    <!-- Swiper Slider -->
+    <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="bilder/start-slider-01.webp" type="image/webp">
+                    <img src="bilder/start-slider-01.jpg"
+                         alt="Kontaktlinsen-Anpassung"
+                         loading="lazy">
+                </picture>
+                <div class="slide-caption">
+                    <div class="container">
+                        <h2>Ihre Experten für Kontaktlinsen</h2>
+                        <p>Individuelle Anpassung mit modernster Technik</p>
+                        <a href="leistungen-kontaktlinsen.html" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="bilder/start-slider-02.webp" type="image/webp">
+                    <img src="bilder/start-slider-02.jpg"
+                         alt="Nachtlinsen"
+                         loading="lazy">
+                </picture>
+                <div class="slide-caption">
+                    <div class="container">
+                        <h2>Nachtlinsen - Tagsüber scharf sehen</h2>
+                        <p>Ohne Brille oder Kontaktlinsen</p>
+                        <a href="leistungen-nachtlinsen.html" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="bilder/start-slider-03.webp" type="image/webp">
+                    <img src="bilder/start-slider-03.jpg"
+                         alt="Myopie Management"
+                         loading="lazy">
+                </picture>
+                <div class="slide-caption">
+                    <div class="container">
+                        <h2>Myopie-Management für Kinder</h2>
+                        <p>Kurzsichtigkeit frühzeitig verlangsamen</p>
+                        <a href="leistungen-beratung-kurzsichtigkeit.html" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="bilder/start-slider-04.webp" type="image/webp">
+                    <img src="bilder/start-slider-04.jpg"
+                         alt="Visuelle Rehabilitation"
+                         loading="lazy">
+                </picture>
+                <div class="slide-caption">
+                    <div class="container">
+                        <h2>Visuelle Rehabilitation</h2>
+                        <p>Individuelle Lösungen bei Sehbehinderungen</p>
+                        <a href="leistungen-visuelle-reha.html" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="bilder/start-slider-05.webp" type="image/webp">
+                    <img src="bilder/start-slider-05.jpg"
+                         alt="3D-Vermessung"
+                         loading="lazy">
+                </picture>
+                <div class="slide-caption">
+                    <div class="container">
+                        <h2>Modernste Untersuchungsgeräte</h2>
+                        <p>3D-Vermessung für perfekte Anpassung</p>
+                        <a href="leistungen-kontaktlinsen.html" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="bilder/start-slider-06.webp" type="image/webp">
+                    <img src="bilder/start-slider-06.jpg"
+                         alt="Team Besser Sehen"
+                         loading="lazy">
+                </picture>
+                <div class="slide-caption">
+                    <div class="container">
+                        <h2>Unser erfahrenes Team</h2>
+                        <p>Ihre Ansprechpartner in Landshut</p>
+                        <a href="team.html" class="btn btn-primary">Team kennenlernen</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="bilder/start-slider-07.webp" type="image/webp">
+                    <img src="bilder/start-slider-07.jpg"
+                         alt="Augenmedizinisches Versorgungszentrum"
+                         loading="lazy">
+                </picture>
+                <div class="slide-caption">
+                    <div class="container">
+                        <h2>Teil des Versorgungszentrums</h2>
+                        <p>Optimale Betreuung durch enge Zusammenarbeit</p>
+                        <a href="kontakt.html" class="btn btn-primary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="bilder/start-slider-08.webp" type="image/webp">
+                    <img src="bilder/start-slider-08.jpg"
+                         alt="Termin vereinbaren"
+                         loading="lazy">
+                </picture>
+                <div class="slide-caption">
+                    <div class="container">
+                        <h2>Jetzt Termin vereinbaren</h2>
+                        <p>Wir nehmen uns Zeit für Sie</p>
+                        <a href="kontakt.html" class="btn btn-primary">Termin vereinbaren</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="container py-5">
+        <h2>Test-Informationen</h2>
+        <ul>
+            <li>✅ 8 Slides mit WebP + JPG Fallback</li>
+            <li>✅ Lazy Loading aktiviert</li>
+            <li>✅ Autoplay (5 Sekunden)</li>
+            <li>✅ Fade-Effekt</li>
+            <li>✅ Navigation (Pfeile + Dots)</li>
+            <li>✅ Responsive Design</li>
+            <li>✅ Touch-Swipe fähig</li>
+        </ul>
+
+        <p><strong>Bundle-Größe:</strong> Swiper = ~170 KB (vs Revolution Slider = 22 MB!)</p>
+        <p><strong>Performance-Gewinn:</strong> 99.2% weniger Code</p>
+    </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    const heroSlider = new Swiper('.hero-slider', {
+        // Loop
+        loop: true,
+
+        // Autoplay
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+
+        // Effect
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+
+        // Speed
+        speed: 1000,
+
+        // Navigation
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Accessibility
+        a11y: {
+            enabled: true,
+            prevSlideMessage: 'Vorheriges Bild',
+            nextSlideMessage: 'Nächstes Bild',
+            firstSlideMessage: 'Dies ist das erste Bild',
+            lastSlideMessage: 'Dies ist das letzte Bild',
+        },
+
+        // Keyboard control
+        keyboard: {
+            enabled: true,
+        },
+    });
+</script>
+
+</body>
+</html>
