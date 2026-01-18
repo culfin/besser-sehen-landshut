@@ -23,7 +23,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<!-- Web Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -86,6 +86,136 @@
 					bottom: 20px;
 					right: 20px;
 					font-size: 25px;
+				}
+			}
+
+			/* ==========================================
+			   SERVICE CARDS - Same style as homepage
+			   ========================================== */
+			.cards-medical-services {
+				position: relative;
+			}
+			/* Cards gleiche Höhe */
+			.cards-medical-services > .card {
+				display: flex;
+			}
+			/* Dekorative Kreise im Hintergrund */
+			.cards-medical-services::before {
+				content: '';
+				position: absolute;
+				top: -100px;
+				right: -100px;
+				width: 400px;
+				height: 400px;
+				background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+				border-radius: 50%;
+				pointer-events: none;
+				z-index: 0;
+			}
+			.cards-medical-services::after {
+				content: '';
+				position: absolute;
+				bottom: -150px;
+				left: -150px;
+				width: 500px;
+				height: 500px;
+				background: radial-gradient(circle, rgba(0, 0, 0, 0.015) 0%, transparent 70%);
+				border-radius: 50%;
+				pointer-events: none;
+				z-index: 0;
+			}
+			.cards-medical-services .card-body {
+				position: relative;
+				padding: 30px 20px;
+				background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+				border-radius: 24px !important;
+				border: 1px solid rgba(0, 0, 0, 0.05) !important;
+				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+				overflow: hidden;
+				z-index: 1;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+			/* Hover-Effekt */
+			.cards-medical-services .card-body::before {
+				content: '';
+				position: absolute;
+				top: -50%;
+				right: -50%;
+				width: 200%;
+				height: 200%;
+				background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+				opacity: 0;
+				transition: opacity 0.6s ease;
+			}
+			.cards-medical-services .card-body:hover::before {
+				opacity: 1;
+			}
+			.cards-medical-services .card-body:hover {
+				transform: translateY(-8px);
+				box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12) !important;
+				border-color: rgba(0, 0, 0, 0.08) !important;
+			}
+			/* Icon Container - Original Style */
+			.cards-medical-services .card-body img {
+				width: 80px !important;
+				height: auto;
+				margin: 0 auto 16px;
+				display: block;
+				transition: transform 0.4s ease;
+			}
+			.cards-medical-services .card-body:hover img {
+				transform: scale(1.05);
+			}
+			/* Card Titles */
+			.cards-medical-services .card-title {
+				font-family: 'Rajdhani', sans-serif;
+				font-weight: 600;
+				font-size: 1.25rem;
+				letter-spacing: 0.05em;
+				line-height: 1.3;
+				color: #212529;
+				margin-bottom: 1rem;
+			}
+			.cards-medical-services .card-text {
+				color: #6c757d;
+				line-height: 1.6;
+			}
+
+			/* ==========================================
+			   MICRO-INTERACTIONS - Staggered Animation
+			   ========================================== */
+			@keyframes fadeInUp {
+				from {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			.cards-medical-services > .card:nth-child(1) .card-body {
+				animation: fadeInUp 0.6s ease-out 0.1s both;
+			}
+			.cards-medical-services > .card:nth-child(2) .card-body {
+				animation: fadeInUp 0.6s ease-out 0.2s both;
+			}
+			.cards-medical-services > .card:nth-child(3) .card-body {
+				animation: fadeInUp 0.6s ease-out 0.3s both;
+			}
+			.cards-medical-services > .card:nth-child(4) .card-body {
+				animation: fadeInUp 0.6s ease-out 0.4s both;
+			}
+
+			/* ==========================================
+			   RESPONSIVE ADJUSTMENTS
+			   ========================================== */
+			@media screen and (max-width: 768px) {
+				.cards-medical-services::before,
+				.cards-medical-services::after {
+					display: none;
 				}
 			}
 		</style>
